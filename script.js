@@ -1,9 +1,3 @@
-// My Tasks - a very simple task list
-
-// Show the tasks as soon as the script loads
-renderTasks();
-
-// The list of tasks. Each task has a text and a "done" flag.
 const tasks = [
   { text: "Buy milk", done: false },
   { text: "Finish homework", done: true },
@@ -65,3 +59,6 @@ function addTask() {
 }
 
 addButton.addEventListener("click", addTask);
+
+// Show the tasks as soon as the script loads (after everything is defined)
+renderTasks();
